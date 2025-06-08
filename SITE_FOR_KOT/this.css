@@ -1,0 +1,578 @@
+/* ВЁРСТКА БРАУЗЕРА-------------------------------------------------------  */
+
+/* упрощает работу с изображениями */
+
+/* img{
+    display: block;
+    max-width: 100%;
+} */
+
+/* наследует свойства шрифта для полей ввода */
+input,textarea,select,button{
+    font:inherit;
+}
+
+html{
+    /*Пригодится в большинстве случаев. Удобнее прижимает футер к низу сайта  */
+    height: 100%;
+    /* плавный скролл */
+    scroll-behavior: smooth;
+}
+
+body{
+    /* Пригодится в большинстве случаев. Удобнее прижимает футер к низу сайта */
+    min-height: 100%;
+/* расстояние между текстом */
+    line-height: 1.5;
+}
+
+/* нормализация блочной модели */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/*  Убираем внутренние отступы слева тега ul, ol у которых есть атрибут class*/
+:where(ul, ol):where([class]){
+    padding-left:0;
+}
+
+/*  Убираем внутренние отступы слева тега h1,h2,p у которых есть атрибут class*/
+:where(h1,h2,p):where([class]){
+    margin-block:0 ;
+}
+/* dd-тег описания определения */
+:where(dd[class]){
+    margin-left: 0;
+}
+/* убираем стандартный маркер ul */
+:where(ul[class]){
+   list-style: none;
+}
+/* =========================================================================================== */
+
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./fonts_1/stl/Ubuntu-Italic.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap; /*если ошибка, то браузер сразу заменяет шрифт*/
+}
+
+body{
+    font-family: "Ubuntu";
+    font-size: 25px;
+    background-color:  #15151d;
+    position:absolute;
+     position: absolute;
+
+ 
+/* 'Inika', Helvetica; */
+} 
+
+/* для мобилки чтоб сжималось */
+ @media only screen and (min-width: 576px){
+.container{
+        width: 540px;
+    }
+} 
+
+/* для ноутбуков */
+@media only screen and (min-width: 992px){
+.container{
+        width: 1140px;
+    }
+}
+
+
+
+/* ============================================================================ */
+.top_bar{
+    position: absolute;
+    margin: auto;
+    transform: translateX(720px);
+}
+
+.kr_krai{
+width: 100%;
+margin:auto;
+height: 100%;
+background-color: #333446;
+color:white;
+}
+
+html{
+    width: auto;
+    height: 3750px;
+    margin: auto;
+}
+ 
+.objects{
+display: flex;
+flex-basis:100px;
+width: 100%;
+margin:auto;
+height: 100%;
+background-color: #333446;
+justify-content: center;
+}
+
+.box_1 img{
+    border-radius: 25px 0px 0px 25px ;
+}
+
+.box_2{
+    margin: 10px;
+    margin-right: 250px;
+    height: 50px;
+    width: 0px;
+    position: absolute;
+    bottom: 39.5px;
+    top: 468px;  
+}
+
+.box_3{
+    margin: 10px;
+    margin-right: 20px; 
+}
+
+.map iframe{
+    position: absolute;
+    bottom: -10px;
+    border-radius: 0px 25px 25px 0px;
+    right: 5px;
+}
+
+.box_4 img{
+    position: relative;
+    height: 600;
+    width: 450;
+    margin-right: 250px;
+    border-radius: 35px;
+    top: 50px;  
+}
+
+
+
+.box_4{           
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content: flex-start;
+    margin: 0px;margin-right: -65px;
+}
+
+
+.end{
+width: 100%;
+/* margin:auto; */
+height: 100%;
+}
+
+.container{
+width: 100%;
+/* margin:auto; */
+height: 100%;
+}
+
+.datas{
+height: 60px;
+display: flex;
+align-items: center;
+justify-content:flex-start;
+}
+
+.datas {
+width: 100%;
+margin:auto;
+height: 100%;
+background-color:  #1b1b25;
+height: 120px;
+}
+
+
+.shapka {
+    background-color:#333446;
+    height: 120px; 
+}
+
+.info{
+text-indent: 55px;
+}
+
+.info_1{
+ display: flex;
+justify-content:left;   
+background-color:#333446;
+text-indent: 55px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first{
+width: 100%;
+margin:auto;
+height: 100%;
+justify-content: center;
+height: 30px;
+}
+
+.first_num{
+background-color: #1b1b25;
+color:white;
+}
+
+.left_board {
+width: 100%;
+margin:auto;
+background-color:#333446;
+text-align:end;
+height: 600px;
+}
+
+.pro_gost{
+width: 100%;
+    margin:auto;
+    background-color:#333446;
+    vertical-align: -10px;
+    top:42px;
+    font-size: 40px;
+    color:white;
+}
+
+.about_info{
+width: 100%;
+margin:auto;
+background-color: #333446;
+height: 500px;
+}
+
+.text_1 {
+    transform: translateX(60px);
+    color:white;
+    padding: 10px;
+    
+}
+
+.color_1{
+    background-color:#7F8CAA;
+    border-radius: 25px;
+    width: 1025px;
+    height: 430px;
+    margin-left: 50px;
+}
+
+.viezd_1{
+    transform: translateX(215px);
+    color:white;
+}
+
+.zaezd_1{
+    transform: translateY(70px);
+    transform: translateX(-215px);
+    color:white;
+}
+
+.in_color_1{
+    background-color:#B8CFCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 252px;
+    width: 950px;
+    height: 120px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 45px;
+}
+
+.for_text_1{
+    position: relative;
+    transform: translateY(189px)
+}
+
+.pro_gost_2{
+width: 100%;
+margin:auto;
+background-color:#333446;
+top:42px;
+font-size: 40px;
+color:white;
+}
+
+.about_info_2{
+width: 100%;
+margin:auto;
+background-color: #333446;
+height: 200px;
+}
+
+.text_2 {
+ transform: translateX();
+}
+
+.for_text_2{
+    position: relative;
+    transform: translateY(189px);
+}
+
+
+.color_1_2{
+    background-color:#7F8CAA;
+    border-radius: 25px;
+    width: 1025px;
+    height: 120px;
+    margin-left: 50px;
+
+}
+
+.ydobstva {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    color:white;
+    margin: auto;
+}
+
+.contacts{
+     background-color: #1b1b25;
+
+    width: 100%;
+    height: 100px;
+
+}
+
+/* =================================================================== */
+
+
+
+p{
+margin: 0;
+  display: block; /* убирает возможные отступы */
+  padding: 0;
+  position: relative; /* или absolute, если нужно */
+  top: 0;
+}
+
+h3{
+    margin: 0px;
+}
+
+.right_board{
+text-align:right;
+
+}
+
+
+.text li{
+    text-align: start;
+    margin: 25px;
+    color:white;
+}
+.text ul{
+    text-align: start;
+    margin: 0px;
+}
+.button_3 .space {
+    word-spacing: 150px;
+    margin: 110px;
+}
+.space .li{
+    text-align: start;
+    margin: 0px;
+}
+/* 1 НОМЕР */
+.the_first{
+    transform: translateX(70px);
+}
+
+
+.buttons_1 .SHAPKA{
+    transform: translateX(70px);
+}
+ /* .back{
+    background-color: rgb(12, 102, 219); 
+    background-image: url('./images/lines.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0; 
+   position: relative;
+} 
+
+
+
+p{
+margin: 0;
+}
+
+/* КНОПКИ----------------------------------------------------------------- */
+
+.buttons_1{
+width: 23%;
+min-width: 20px;
+max-width: 100%;
+
+padding: 1px 10px;/* вверх, ширина */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+margin-right: 20px;
+font-size: 100%;
+min-block-size: 10%;
+}
+
+.buttons_2{
+
+padding: 1px 20px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+margin-right: 20px;
+}
+
+.buttons_3{
+
+padding: 1px 10px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+margin-right: 50px;
+
+}
+
+.buttons_2_2{
+
+padding: 1px 30px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+}
+
+
+.buttons_3_1{
+
+padding: 1px 30px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+margin: 10px;
+transform: translateX(55px);
+}
+
+.buttons_3_1_1{
+
+padding: 1px 30px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+margin: -30px;
+transform: translateX(312px);
+}
+
+
+
+.buttons_3_2{
+
+padding: 1px 30px;/* вверх, ширина */
+/* border-style: solid; */
+/* border: 10px gold;
+outline: 5px blue; */
+border-radius: 15px;
+box-shadow: -10px -5px 30px;
+/* transition: all 300ms ease; */
+}
+
+button{
+background-color:#ECEFCA;
+}
+/* ЭФФЕКТЫ---------------------------------------------------------- */
+.buttons_1:hover{
+background-color: #7F8CAA;}
+.buttons_2:hover{
+background-color:  #7F8CAA;}
+.buttons_3:hover{
+background-color:  #7F8CAA;}
+
+.buttons_1:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+.buttons_2:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+.buttons_3:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+
+
+
+.buttons_3_1:hover{
+background-color:  #7F8CAA;}
+
+.buttons_3_1:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+
+
+.buttons_3_1_1:hover{
+background-color: #7F8CAA;}
+
+.buttons_3_1_1:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+
+
+.buttons_3_2:hover{
+background-color:  #7F8CAA;}
+.buttons_3_2:active{
+color:rgb(0, 0, 0);
+background-color: #B2D8CE;
+}
+
+
+/* ===================================================================== */
+
+/* если не сможет загрузиться первый, то загрузится второй и тд */
+.custom-font{
+font-family: "Ubuntu","Roboto", sans-serif ;
+
+}
+
+.kotovski{
+    position: relative;
+    background-color: white;
+    height: 40px;
+    width: 140px;
+    border-radius: 15px 15px 15px 15px ;
+    transform: translateX(50px);
+    vertical-align: -10px;
+    top:42px;
+}
+
+.info_1{
+    color:white
+}
